@@ -1,36 +1,73 @@
-/* Utilisation de CSS Grid sur le body comme demandé */
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Cible la liste non ordonnée à l'intérieur de la navigation */
-header nav ul {
-    display: flex;          /* Active le Flexbox sur le conteneur <ul> */   
-    list-style: none;       /* Enlève les puces de la liste */
-    padding: 0;             /* Enlève le padding par défaut des listes */
-    margin: 0;
-    gap: 20px;
+/* Header */
+
+header{
+    background:#444;
+    color:white;
+    padding:40px;
 }
 
-/* Optionnel : pour rendre les liens plus jolis */
-header nav ul li a {
-    display: flex;
-    text-decoration: none;  /* Enlève le soulignement bleu des liens */
-    align-items: center;
+/* Navigation */
+
+nav{
+    background:black;
 }
 
-
-main {
-    padding: 2rem;
+nav ul{
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+}
+
+/* Main layout */
+
+.container{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    min-height:400px;
+}
+
+/* Main content */
+
+main{
+    background:#bdbdbd;
+    padding:30px;
+}
+
+main img{
+    width:100%;
+    margin:20px 0;
+}
+
+/* Aside */
+
+aside{
+    background:#e3e3e3;
+    padding:30px;
+}
+
+aside img{
+    width:100%;
+}
+
+/* Footer */
+
+footer{
+    background:#444;
+    color:white;
+    text-align:center;
+    padding:40px;
 }
