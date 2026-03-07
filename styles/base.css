@@ -42,9 +42,9 @@ transition:0.3s;
 
 
 main{
-max-width:auto;
-margin: 0.5rem;
-padding: 0.5rem;
+max-width:100%;
+margin: auto;
+padding: auto;
 
 display:flex;
 grid-template-columns:1fr 1fr;
@@ -52,29 +52,6 @@ gap: 0;
 text-align: left;
 }
 
-.about{
-display:flex;
-align-items:center;
-gap:20px;
-}
-
-.about img{
-width:150px;
-border-radius:10px;
-}
-
-.card ul{
-padding-left:20px;
-}
-
-.card a{
-text-decoration:none;
-color:#0044cc;
-}
-
-.card a:hover{
-text-decoration:underline;
-}
 
 .card{
 background:white;
@@ -93,6 +70,6 @@ footer{
 background:#003366;
 color:white;
 text-align:center;
-padding: 25px;
-margin-top: 0;
+padding: 15px;
+margin: 0;
 }
